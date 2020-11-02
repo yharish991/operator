@@ -11,7 +11,7 @@ items:
   spec:
     deploymentMode: "dev"
     runtime: "spring-boot"
-    version: "2.1.6.RELEASE"
+    version: "2.2.6.RELEASE"
     exposeService: true
     buildConfig:
       type: "s2i"

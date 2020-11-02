@@ -9,8 +9,8 @@
     <description>Spring Boot - Fruit backend</description>
     
     <properties>
-        <snowdrop-bom.version>2.1.6.SP3</snowdrop-bom.version>
-        <spring-boot.version>2.1.6.RELEASE</spring-boot.version>
+        <snowdrop-bom.version>2.2.6.Final</snowdrop-bom.version>
+        <spring-boot.version>2.2.6.RELEASE</spring-boot.version>
         <postgresql.version>9.4.1212</postgresql.version>
         <db.name>PostgreSQL</db.name>
 

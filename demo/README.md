@@ -58,7 +58,7 @@ The `@HalkyonComponent` annotation has been added within the Spring Boot `Applic
 When `dekorate` dependency will be called, it will scan the java classes, search about such annotations and if they exist, it will generate from the information provided a `halkyon.yml` file.
 
 Additional information could also be calculated automatically as `Dekorate` supports different frameworks.
-When we use Spring Boot Dekorate, then the following parameters `runtime` and `version` will be set respectively to `spring-boot` and `2.1.6.RELEASE`.
+When we use Spring Boot Dekorate, then the following parameters `runtime` and `version` will be set respectively to `spring-boot` and `2.2.6.RELEASE`.
 
 The `@HalkyonLink` annotation express,  using an `@Env`, the name of the variable to be injected within the pod in order to let the Spring Boot Application
 to configure its `HTTP Client` to access the `HTTP endpoint` exposed by the backend service.
@@ -152,8 +152,8 @@ Wait a few moment and verify if the status of the `components` deployed are read
 ```bash
 oc get cp -n demo
 NAME               RUNTIME       VERSION         AGE       MODE      STATUS    MESSAGE   REVISION
-fruit-backend-sb   spring-boot   2.1.6.RELEASE   6m        dev       Ready     Ready     
-fruit-client-sb    spring-boot   2.1.6.RELEASE   5m        dev       Ready     Ready     
+fruit-backend-sb   spring-boot   2.2.6.RELEASE   6m        dev       Ready     Ready     
+fruit-client-sb    spring-boot   2.2.6.RELEASE   5m        dev       Ready     Ready     
 
 oc get links -n demo
 NAME                    AGE       STATUS    MESSAGE
