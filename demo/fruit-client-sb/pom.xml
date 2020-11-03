@@ -8,11 +8,19 @@
     <name>Spring Boot - Fruit REST client</name>
     <description>Spring Boot - Fruit REST client</description>
 
+    <repositories>
+        <repository>
+            <id>redhat-ga</id>
+            <name>Red Hat GA Repository</name>
+            <url>https://maven.repository.redhat.com/ga/</url>
+        </repository>
+    </repositories>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>me.snowdrop</groupId>
-                <artifactId>spring-boot-bom</artifactId>
+                <groupId>dev.snowdrop</groupId>
+                <artifactId>snowdrop-dependencies</artifactId>
                 <version>${snowdrop-bom.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
@@ -21,7 +29,7 @@
     </dependencyManagement>
 
     <properties>
-        <snowdrop-bom.version>2.2.6.Final</snowdrop-bom.version>
+        <snowdrop-bom.version>2.2.6.Final-redhat-00001</snowdrop-bom.version>
         <spring-boot.version>2.2.6.RELEASE</spring-boot.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -31,10 +39,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring-boot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>${spring-boot.version}</version>
         </dependency>
         <!-- To generate CRD -->
         <dependency>
