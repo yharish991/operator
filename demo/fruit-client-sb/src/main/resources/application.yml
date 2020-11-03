@@ -6,8 +6,8 @@ endpoint:
   fruit: ${KUBERNETES_ENDPOINT_FRUIT}
 
 # Halkyon properties to configure the component, link or capability
-#dekorate:
-#  component:
-#    name: fruit-client-sb
-#    deploymentMode: dev
-#    exposeService: true
+dekorate:
+  component:
+    name: fruit-client-sb
+    deploymentMode: dev
+    exposeService: true

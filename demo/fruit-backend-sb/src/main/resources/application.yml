@@ -2,23 +2,23 @@ server:
   port: 8080
 
 # Halkyon properties to configure the component, link or capability
-#dekorate:
-#  component:
-#    name: fruit-backend-sb
-#    deploymentMode: dev
-#    exposeService: true
-#  capability:
-#    name: postgres-db
-#    category: database
-#    type: postgres
-#    version: "10.6"
-#    parameters:
-#      - name: DB_USER
-#        value: admin
-#      - name: DB_PASSWORD
-#        value: admin
-#      - name: DB_NAME
-#        value: sample-db
+dekorate:
+  component:
+    name: fruit-backend-sb
+    deploymentMode: dev
+    exposeService: true
+  capability:
+    name: postgres-db
+    category: database
+    type: postgres
+    version: "10.6"
+    parameters:
+      - name: DB_USER
+        value: admin
+      - name: DB_PASSWORD
+        value: admin
+      - name: DB_NAME
+        value: sample-db
 
 spring:
   datasource:
